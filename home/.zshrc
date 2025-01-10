@@ -21,6 +21,9 @@ if [[ $TERM_PROGRAM = "WarpTerminal" ]]
     source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 fi
 
+# direnv
+eval "$(direnv hook zsh)"
+
 # curl
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 
